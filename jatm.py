@@ -46,7 +46,10 @@ class Bot(commands.Bot):
 
     @commands.command()
     async def web(self, ctx):
-        await ctx.send('https://oscarmlage.com')
+        await ctx.send(
+                'https://oscarmlage.com -- '
+                'https://github.com/oscarmlage -- '
+                'https://userlinux.net')
 
     @commands.command()
     async def github(self, ctx):
