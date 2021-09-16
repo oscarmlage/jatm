@@ -52,8 +52,8 @@ class Bot(commands.Bot):
                 'https://userlinux.net')
 
     @commands.command()
-    async def github(self, ctx):
-        await ctx.send('https://github.com/oscarmlage')
+    async def repo(self, ctx):
+        await ctx.send('https://github.com/oscarmlage/jatm')
 
     @commands.command()
     async def test(self, ctx):
