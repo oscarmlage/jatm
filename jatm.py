@@ -56,6 +56,10 @@ class Bot(commands.Bot):
         await ctx.send('https://github.com/oscarmlage/jatm')
 
     @commands.command()
+    async def version(self, ctx):
+        await ctx.send(os.environ['VERSION'])
+
+    @commands.command()
     async def test(self, ctx):
         user_prefix = self.get_author_prefix(ctx.message)
         await ctx.send(f'Test passed, {user_prefix} {ctx.author.name}!')
